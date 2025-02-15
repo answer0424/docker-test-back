@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: docker-test
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/db2409?useSSL=false&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true
+    username: root
+    password: 1234
+
+  jpa:
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+    hibernate:
+      ddl-auto: update
+
+
+server:
+  port: 8081
